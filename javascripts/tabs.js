@@ -7,7 +7,9 @@
  * http://www.opensource.org/licenses/mit-license.php
  * 8/17/2011
  */
-
+    $('.carousel').carousel({
+    interval: 2000
+    })
 (function ($) {
   // hash change handler
   function hashchange () {
@@ -27,3 +29,10 @@
   hashchange();
   $(hashchange);
 })(jQuery);
+
+
+$('.carousel').carousel()
+
+$('.carousel').carousel({
+    interval: 2000
+    })

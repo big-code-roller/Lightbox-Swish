@@ -16,7 +16,36 @@
 
 /* #Site Styles
 ================================================== */
+h1 {
+	color: #464646;
+	text-transform: capitalize;
+	}
+	
+h2 {
+	font-size: 24px;
+	color: #4bb9d2;
+	text-transform: capitalize;
+	margin: 0;
+	line-height: 19px;
+}
+	
+a {
+	text-decoration: none;
+	}
 
+	
+a:hover .navigation, a:hover .navigation large,  .navigation, .more {
+	color: #4bb9d2;
+	}
+	
+p {
+	font-weight: 200;
+	color: #767676	
+}
+
+.grey {
+	color: #767676	
+}
 
 
 /* #Wrappers
@@ -31,16 +60,16 @@
     }
 	
 body {
-	background-color: blue;
+	/*background-color: blue;*/
 	}
 	
 .wrapper {
-	background-color: green;	
-    min-height: 100%;
+    /*background-color: green;*/
     height: auto !important;
-    height: 100%;
     margin: 0 auto -4em;
-    }
+    min-height: 60%;
+    padding-top: 65px;
+}
 	
 	
 	
@@ -49,30 +78,33 @@ body {
 	
 
 .header-wrapper {
-    background-color: purple;
+   /* background-color: purple;*/
+	background-color: #fff;
 	width: auto;
-	 height: 8em;
+	 height: 92px;
 	 clear: both;
     }
 	
 .header {
-		background-color: teal;
-		height: 8em;
+		/*background-color: teal;*/
+		background-color: #fff;
+		height: 87px;
 		}
 
 /* #Nav Wrappers
 ================================================== */
 	
 .nav-wrapper {
-    background-color: Cyan;
+    /*background-color: Cyan;*/
+	background-color: #fff;
 	width: auto;
-	 height: 4em;
+	 height: 80px;
 	 clear: both;
     }
 	
 .nav {
-		background-color: BurlyWood;
-		height: 4em;
+		/*background-color: BurlyWood;*/
+		height: 80px;
 		}
 
 
@@ -86,36 +118,106 @@ body {
     }
 
 .footer-wrapper {
-    background-color: red;
+   /* background-color: red;*/
 	width: auto;
     }
 
 .footer {
-		background-color: orangered;
+		/*background-color: orangered;*/
 		height: 4em;
 		}
 
+.footer p {
+	font-size: 11px;
+	float: left;
+	}
 
 /* #Page Styles
 ================================================== */
 
-/* #Media Queries
+/* #Header Styles
 ================================================== */
 
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+.header {
+    padding-top: 10px;
+}
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+.logo {
+	height: auto;
+	width: 80%;
+	margin: 0 10%;
+}
 
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+/* #Navigation Styles
+================================================== */
+	
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+/* #Pictures styles
+================================================== */
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+.pic_embed-container {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding-bottom: 71.25%;
+    position: relative;
+}
+
+.picture_area {
+    margin: 20px 0 0 47px !important;
+}
+ 
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {   
+    position: absolute;   
+    top: 0;   
+    left: 0;   
+    width: 100%;   
+    height: 100%;
+}
+
+.picture {
+	height: 150px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 210px !important;
+	border: thin solid #FFF;	
+}
+
+.zoom { 
+    width:293px; 
+    height:170px; 
+    display:block; 
+    position:relative; 
+    overflow:hidden; 
+    border:1px solid #ddd; 
+    background:#fff url(../images/zoomin.png) no-repeat center;
+}
+
+.zoom img { display:none }
+
+.zoomOverlay {
+            position:absolute;
+            top:0; left:0;
+            bottom:0; right:0;
+            display:none;
+            background-image:url(../images/zoomin.png);
+            background-repeat:no-repeat;
+            background-position:center;
+}
+
+.image-hover:hover {
+	background-color: blue;
+	width: 210px;
+	height: 152px;
+	z-index: 1000;
+	position: absolute;
+	visibility: visible;
+	}
+
+	
+
 
 
 /* #Font-Face
